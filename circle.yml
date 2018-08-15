@@ -1,45 +1,88 @@
-machine:
-  timezone:
-    America/Chicago
-
-  node:
-    version: 6.1.0
-
-  php:
-    version: 7.0.11
-
+defaults: &defaults
+  docker:
+    - image: drupaldocker/php:7.1-cli
+  working_directory: ~/wp-updates
   environment:
-    # In addition to the environment variables defined in this file, these
-    # other variables are defined in the Circle CI UI.
-    #
-    # SITE_UUID:              UUID of the Pantheon site to run tests on
-    # TERMINUS_MACHINE_TOKEN: The Pantheon machine token
-    # SLACK_CHANNEL:          The Slack channel for sending notifications
-    # SLACK_URL:         The Slack endpoint for sending notifications
-    #
-    TERMINUS_ENV: "update-dr" 
-    PATH: $PATH:~/.composer/vendor/bin:~/.config/composer/vendor/bin
+    TZ: "/usr/share/zoneinfo/America/Chicago"
+    TERMINUS_ENV: "ci-update"
 
-dependencies:
-  cache_directories:
-    - ~/.composer
-    - /opt/circleci/nodejs/v4.2.6/lib/node_modules
-    - /opt/circleci/nodejs/v4.2.6/bin
+version: 2
+jobs:
+    updates:
+        <<: *defaults
+        steps:
+            - checkout
+            - restore_cache:
+                keys:
+                    - composer-cache
+                    - terminus-install
 
-  pre:
-    # Kick off Slack Notification
-    - php -f bin/slack_notify.php circle_start "${CIRCLE_BUILD_NUM}"
+            - run:
+                name: dependencies
+                command: ./bin/set-up-globals.sh
 
-    # Install BackstopJS and SlimerJS
-    - npm install -g backstopjs
-    - npm install -g slimerjs
+            - run:
+                name: run updates
+                command: ./bin/wp-auto-update.sh
 
-    # Install Terminus
-    - composer global require -n  "pantheon-systems/terminus:1.4.1"
+            - save_cache:
+                key: composer-cache
+                paths:
+                    - $HOME/.composer/cache
 
-  override:
-    - ./bin/drupal-auto-update.sh
+            - save_cache:
+                key: terminus-install
+                paths:
+                    - $HOME/.terminus
+                    - $HOME/terminus
 
-test:
-  override:
-    - ls
+workflows:
+  version: 2
+  run_updates:
+    jobs:
+      - updates
+
+# machine:
+#   timezone:
+#     America/Chicago
+
+#   node:
+#     version: 6.1.0
+
+#   php:
+#     version: 7.0.11
+
+#   environment:
+#     # In addition to the environment variables defined in this file, these
+#     # other variables are defined in the Circle CI UI.
+#     #
+#     # SITE_UUID:              UUID of the Pantheon site to run tests on
+#     # TERMINUS_MACHINE_TOKEN: The Pantheon machine token
+#     # SLACK_CHANNEL:          The Slack channel for sending notifications
+#     # SLACK_URL:         The Slack endpoint for sending notifications
+#     #
+#     PATH: $PATH:~/.composer/vendor/bin:~/.config/composer/vendor/bin
+
+# dependencies:
+#   cache_directories:
+#     - ~/.composer
+#     - /opt/circleci/nodejs/v4.2.6/lib/node_modules
+#     - /opt/circleci/nodejs/v4.2.6/bin
+
+#   pre:
+#     # Kick off Slack Notification
+#     - php -f bin/slack_notify.php circle_start "${CIRCLE_BUILD_NUM}"
+
+#     # Install BackstopJS and SlimerJS
+#     - npm install -g backstopjs
+#     - npm install -g slimerjs
+
+#     # Install Terminus
+#     - composer global require -n  "pantheon-systems/terminus:1.4.1"
+
+#   override:
+#     - ./bin/drupal-auto-update.sh
+
+# test:
+#   override:
+#     - ls
