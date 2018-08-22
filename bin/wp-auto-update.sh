@@ -5,12 +5,12 @@ ssh-add <(echo $SSH_PRIVATE_KEY | base64 --decode)
 UPDATES_APPLIED=false
 
 # login to Terminus
-# php -f bin/slack_notify.php terminus_login
+php -f bin/slack_notify.php terminus_login
 echo -e "\nLogging into Terminus..."
 terminus auth:login --machine-token=${TERMINUS_MACHINE_TOKEN}
 
 # setup the multidev environment
-# php -f bin/slack_notify.php pantheon_multidev_setup
+php -f bin/slack_notify.php pantheon_multidev_setup
 echo -e "\nDeleting the ${TERMINUS_ENV} multidev environment..."
 terminus multidev:delete $SITE_UUID.$TERMINUS_ENV --delete-branch --yes
 echo -e "\nRe-creating the ${TERMINUS_ENV} multidev environment..."
@@ -18,14 +18,14 @@ terminus multidev:create $SITE_UUID.live $TERMINUS_ENV
 
 # check for upstream updates
 echo -e "\nChecking for upstream updates on the ${TERMINUS_ENV} multidev..."
-# php -f bin/slack_notify.php drupal_updates
+php -f bin/slack_notify.php wordpress_updates
 UPSTREAM_UPDATES="$(terminus upstream:updates:list $SITE_UUID.$TERMINUS_ENV  --format=yaml)"
 
 if [[ ${UPSTREAM_UPDATES} == "{  }" ]]
 then
     # no upstream updates available
     echo -e "\nNo upstream updates found on the ${TERMINUS_ENV} multidev..."
-    # php -f bin/slack_notify.php drupal_no_coreupdates
+    php -f bin/slack_notify.php wordpress_no_coreupdates
 else
     # making sure the multidev is in git mode
     echo -e "\nSetting the ${TERMINUS_ENV} multidev to git mode"
@@ -33,8 +33,8 @@ else
 
     # apply Wordpress upstream updates
     echo -e "\nApplying upstream updates on the ${TERMINUS_ENV} multidev..."
-    # php -f bin/slack_notify.php drupal_coreupdates
-    # php -f bin/slack_notify.php terminus_coreupdates
+    php -f bin/slack_notify.php wordpress_coreupdates
+    php -f bin/slack_notify.php terminus_coreupdates
     terminus upstream:updates:apply $SITE_UUID.$TERMINUS_ENV --yes --updatedb --accept-upstream
     UPDATES_APPLIED=true
 fi
@@ -54,12 +54,12 @@ if [[ ${PLUGIN_UPDATES} == "No plugin updates available." ]]
 then
     # no Wordpress plugin updates found
     echo -e "\nNo Wordpress plugin updates found on the ${TERMINUS_ENV} multidev..."
-    # php -f bin/slack_notify.php drupal_no_pluginupdates
+    php -f bin/slack_notify.php wordpress_no_pluginupdates
 else
     # update Wordpress plugins
     echo -e "\nUpdating Wordpress plugins on the ${TERMINUS_ENV} multidev..."
-    # php -f bin/slack_notify.php drupal_pluginupdates ${PLUGIN_UPDATES}
-    # php -f bin/slack_notify.php terminus_pluginupdates
+    php -f bin/slack_notify.php wordpress_pluginupdates ${PLUGIN_UPDATES}
+    php -f bin/slack_notify.php terminus_pluginupdates
     terminus wp $SITE_UUID.$TERMINUS_ENV -- plugin update --all
 
     # wake the site environment before committing code
@@ -76,10 +76,10 @@ if [[ "${UPDATES_APPLIED}" = false ]]
 then
     # no updates applied
     echo -e "\nNo updates to apply..."
-    # php -f bin/slack_notify.php wizard_noupdates
+    php -f bin/slack_notify.php wizard_noupdates
 else
     # updates applied, carry on
-    # php -f bin/slack_notify.php wizard_updates
+    php -f bin/slack_notify.php wizard_updates
 
     # ping the multidev environment to wake it from sleep
     echo -e "\nPinging the ${TERMINUS_ENV} multidev environment to wake it from sleep..."
@@ -87,7 +87,7 @@ else
 
     # backstop visual regression
     echo -e "\nRunning BackstopJS tests..."
-    # php -f bin/slack_notify.php visual
+    php -f bin/slack_notify.php visual
     backstop reference
     VISUAL_REGRESSION_RESULTS=$(backstop test || echo 'true')
 
@@ -97,12 +97,12 @@ else
     then
         # Visual Regression Failed. Get Visual Difference Image
         echo -e "\nVisual regression tests failed! Please manually check the ${TERMINUS_ENV} multidev..."
-        # php -f bin/slack_notify.php visual_different `find . | grep png | grep failed`
+        php -f bin/slack_notify.php visual_different `find . | grep png | grep failed`
         exit 1
     else
         # visual regression passed
         echo -e "\nVisual regression tests passed between the ${TERMINUS_ENV} multidev and live."
-        # php -f bin/slack_notify.php visual_same
+        php -f bin/slack_notify.php visual_same
 
         # # enable git mode on dev
         # echo -e "\nEnabling git mode on the dev environment..."
