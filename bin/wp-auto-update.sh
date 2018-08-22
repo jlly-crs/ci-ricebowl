@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval $(ssh-agent -s)
+ssh-add <(echo $SSH_PRIVATE_KEY | base64 --decode)
 UPDATES_APPLIED=false
 
 # login to Terminus
@@ -46,7 +48,7 @@ terminus env:wake -n $SITE_UUID.$TERMINUS_ENV
 
 # check for Wordpress plugin updates
 echo -e "\nChecking for Wordpress plugin updates on the ${TERMINUS_ENV} multidev..."
-PLUGIN_UPDATES="$(terminus remote:wp $SITE_UUID.$TERMINUS_ENV -- plugin update --dry-run --all --format=summary | grep -v ok)"
+PLUGIN_UPDATES="$(terminus wp $SITE_UUID.$TERMINUS_ENV -- plugin update --dry-run --all --format=summary)"
 
 if [[ ${PLUGIN_UPDATES} == "No plugin updates available." ]]
 then
@@ -58,7 +60,7 @@ else
     echo -e "\nUpdating Wordpress plugins on the ${TERMINUS_ENV} multidev..."
     # php -f bin/slack_notify.php drupal_pluginupdates ${PLUGIN_UPDATES}
     # php -f bin/slack_notify.php terminus_pluginupdates
-    terminus remote:wp $SITE_UUID.$TERMINUS_ENV -- plugin update --all
+    terminus wp $SITE_UUID.$TERMINUS_ENV -- plugin update --all
 
     # wake the site environment before committing code
     echo -e "\nWaking the ${TERMINUS_ENV} multidev..."
@@ -70,63 +72,63 @@ else
     UPDATES_APPLIED=true
 fi
 
-# if [[ "${UPDATES_APPLIED}" = false ]]
-# then
-#     # no updates applied
-#     echo -e "\nNo updates to apply..."
-#     # php -f bin/slack_notify.php wizard_noupdates
-# else
-#     # updates applied, carry on
-#     # php -f bin/slack_notify.php wizard_updates
+if [[ "${UPDATES_APPLIED}" = false ]]
+then
+    # no updates applied
+    echo -e "\nNo updates to apply..."
+    # php -f bin/slack_notify.php wizard_noupdates
+else
+    # updates applied, carry on
+    # php -f bin/slack_notify.php wizard_updates
 
-#     # ping the multidev environment to wake it from sleep
-#     echo -e "\nPinging the ${TERMINUS_ENV} multidev environment to wake it from sleep..."
-#     terminus env:wake -n $SITE_UUID.$TERMINUS_ENV
+    # ping the multidev environment to wake it from sleep
+    echo -e "\nPinging the ${TERMINUS_ENV} multidev environment to wake it from sleep..."
+    terminus env:wake -n $SITE_UUID.$TERMINUS_ENV
 
-#     # backstop visual regression
-#     echo -e "\nRunning BackstopJS tests..."
-#     # php -f bin/slack_notify.php visual
-#     backstop reference
-#     VISUAL_REGRESSION_RESULTS=$(backstop test || echo 'true')
+    # backstop visual regression
+    echo -e "\nRunning BackstopJS tests..."
+    # php -f bin/slack_notify.php visual
+    backstop reference
+    VISUAL_REGRESSION_RESULTS=$(backstop test || echo 'true')
 
-#     echo "${VISUAL_REGRESSION_RESULTS}"
+    echo "${VISUAL_REGRESSION_RESULTS}"
 
-#     if [[ ${VISUAL_REGRESSION_RESULTS} == *"Mismatch errors found"* ]]
-#     then
-#         # Visual Regression Failed. Get Visual Difference Image
-#         echo -e "\nVisual regression tests failed! Please manually check the ${TERMINUS_ENV} multidev..."
-#         # php -f bin/slack_notify.php visual_different `find . | grep png | grep failed`
-#         exit 1
-#     else
-#         # visual regression passed
-#         echo -e "\nVisual regression tests passed between the ${TERMINUS_ENV} multidev and live."
-#         # php -f bin/slack_notify.php visual_same
+    if [[ ${VISUAL_REGRESSION_RESULTS} == *"Mismatch errors found"* ]]
+    then
+        # Visual Regression Failed. Get Visual Difference Image
+        echo -e "\nVisual regression tests failed! Please manually check the ${TERMINUS_ENV} multidev..."
+        # php -f bin/slack_notify.php visual_different `find . | grep png | grep failed`
+        exit 1
+    else
+        # visual regression passed
+        echo -e "\nVisual regression tests passed between the ${TERMINUS_ENV} multidev and live."
+        # php -f bin/slack_notify.php visual_same
 
-#         # enable git mode on dev
-#         echo -e "\nEnabling git mode on the dev environment..."
-#         terminus connection:set $SITE_UUID.dev git
+        # # enable git mode on dev
+        # echo -e "\nEnabling git mode on the dev environment..."
+        # terminus connection:set $SITE_UUID.dev git
 
-#         # merge the multidev back to dev
-#         echo -e "\nMerging the ${TERMINUS_ENV} multidev back into the dev environment (master)..."
-#         # php -f bin/slack_notify.php pantheon_deploy dev
-#         terminus multidev:merge-to-dev $SITE_UUID.$TERMINUS_ENV
+        # # merge the multidev back to dev
+        # echo -e "\nMerging the ${TERMINUS_ENV} multidev back into the dev environment (master)..."
+        # # php -f bin/slack_notify.php pantheon_deploy dev
+        # terminus multidev:merge-to-dev $SITE_UUID.$TERMINUS_ENV
 
-#         # deploy to test
-#         echo -e "\nDeploying the updates from dev to test..."
-#         # php -f bin/slack_notify.php pantheon_deploy test
-#         terminus env:deploy $SITE_UUID.test --sync-content --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
+        # # deploy to test
+        # echo -e "\nDeploying the updates from dev to test..."
+        # # php -f bin/slack_notify.php pantheon_deploy test
+        # terminus env:deploy $SITE_UUID.test --sync-content --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
 
-#         # backup the live site
-#         echo -e "\nBacking up the live environment..."
-#         # php -f bin/slack_notify.php pantheon_backup
-#         terminus backup:create $SITE_UUID.live --element=all --keep-for=30
+        # # backup the live site
+        # echo -e "\nBacking up the live environment..."
+        # # php -f bin/slack_notify.php pantheon_backup
+        # terminus backup:create $SITE_UUID.live --element=all --keep-for=30
 
-#         # deploy to live
-#         echo -e "\nDeploying the updates from test to live..."
-#         # php -f bin/slack_notify.php pantheon_deploy live
-#         terminus env:deploy $SITE_UUID.live --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
+        # # deploy to live
+        # echo -e "\nDeploying the updates from test to live..."
+        # # php -f bin/slack_notify.php pantheon_deploy live
+        # terminus env:deploy $SITE_UUID.live --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
 
-#         echo -e "\nVisual regression tests passed! Wordpress updates deployed to live..."
-#         # php -f bin/slack_notify.php wizard_done `find . | grep document_0_desktop | grep test`
-#     fi
-# fi
+        # echo -e "\nVisual regression tests passed! Wordpress updates deployed to live..."
+        # # php -f bin/slack_notify.php wizard_done `find . | grep document_0_desktop | grep test`
+    fi
+fi
