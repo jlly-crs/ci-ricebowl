@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "http://live-museo-de-arte-updates.pantheonsite.io/",
-      "referenceUrl": "https://update-dr-museo-de-arte-updates.pantheonsite.io/",
+      "url": "http://live-crsricebowl.pantheonsite.io/",
+      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -26,7 +26,6 @@
     "compare_data": "backstop_data/bitmaps_test/compare.json",
     "casper_scripts": "backstop_data/casper_scripts"
   },
-  "engine": "slimer",
   "report": [ "CI" ],
   "casperFlags": [],
   "debug": false,
