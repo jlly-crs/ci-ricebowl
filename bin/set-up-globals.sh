@@ -15,4 +15,6 @@ source $BASH_ENV
 set +ex
 
 mkdir $HOME/.ssh
+eval $(ssh-agent -s)
+ssh-add <(echo $SSH_PRIVATE_KEY | base64 --decode)
 echo "StrictHostKeyChecking no" >> "$HOME/.ssh/config"
