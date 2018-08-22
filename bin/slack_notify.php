@@ -5,7 +5,7 @@ require_once( dirname( __FILE__ ) . '/slack_helper.php' );
 
 // Assemble the Arguments
 $slack_type = $argv[1]; // Argument One
-$slack_channel = getenv('SLACK_CHANNEL');
+$slack_channel = getenv('DE_SLACK_CHANNEL');
 
 switch($slack_type) {
   case 'drupal_updates':

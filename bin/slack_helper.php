@@ -46,8 +46,8 @@ function _slack_tell( $message, $slack_channel_name, $slack_user_name, $slack_ic
  * @param array $requiredKeys List of keys in secrets file that must exist.
  */
 function _get_secrets( $requiredKeys, $defaults ) {
-  if (getenv('SLACK_URL')) {
-    return array('slack_url' => getenv('SLACK_URL'));
+  if (getenv('DE_SLACK_URL')) {
+    return array('slack_url' => getenv('DE_SLACK_URL'));
   }
 
 	$secretsFile = $_SERVER['HOME'] . '/files/private/secrets.json';
