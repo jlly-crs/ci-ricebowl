@@ -9,7 +9,7 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "http://live-crsricebowl.pantheonsite.io/",
+      "url": "https://www.crsricebowl.org/",
       "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [

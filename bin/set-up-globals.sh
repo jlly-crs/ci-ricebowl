@@ -3,7 +3,7 @@
 set -ex
 
 apt-get update
-apt-get install -y gpg
+apt-get install -y gpg libfontconfig
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 apt-get install -y nodejs
 
