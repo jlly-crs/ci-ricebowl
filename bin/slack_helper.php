@@ -1,10 +1,14 @@
 <?php
 
 /**
- * Helper Function to Alert Slack
+ * @file
+ * Helper functions for communicating with Slack.
  */
-function _slack_tell( $message, $slack_channel_name, $slack_user_name, $slack_icon_url, $left_color_bar = '#EFD01B' ) {
 
+/**
+ * Helper Function to Alert Slack.
+ */
+function _slack_tell($message, $slack_channel_name, $slack_user_name, $slack_icon_url, $left_color_bar = '#EFD01B') {
   if (is_array($message)) {
     $fields = array();
     foreach ($message as $title => $text) {
@@ -14,7 +18,8 @@ function _slack_tell( $message, $slack_channel_name, $slack_user_name, $slack_ic
           'value' => $text,
           'short' => 'true',
         );
-      } else {
+      }
+      else {
         $fields[] = array(
           'value' => $text,
           'short' => 'true',
@@ -23,9 +28,9 @@ function _slack_tell( $message, $slack_channel_name, $slack_user_name, $slack_ic
     }
     $attachment = array(
       'fallback' => $message,
-      'color'    => $left_color_bar, 
+      'color'    => $left_color_bar,
       'fields'   => $fields,
-      'mrkdwn_in' => ["text", "pretext", "fields"]
+      'mrkdwn_in' => ["text", "pretext", "fields"],
     );
   }
   else {
@@ -34,69 +39,71 @@ function _slack_tell( $message, $slack_channel_name, $slack_user_name, $slack_ic
         'value' => $message,
         'short' => 'false',
       ),
-    );    	
+    );
     $attachment = FALSE;
   }
-  _slack_notification( $slack_channel_name, $slack_user_name, $message, $slack_icon_url, $attachment );
+  _slack_notification($slack_channel_name, $slack_user_name, $message, $slack_icon_url, $attachment);
 }
 
 /**
  * Get secrets from secrets file.
  *
- * @param array $requiredKeys List of keys in secrets file that must exist.
+ * @param array $requiredKeys
+ *   List of keys in secrets file that must exist.
  */
-function _get_secrets( $requiredKeys, $defaults ) {
+function _get_secrets(array $requiredKeys, $defaults) {
   if (getenv('DE_SLACK_URL')) {
     return array('slack_url' => getenv('DE_SLACK_URL'));
   }
 
-	$secretsFile = $_SERVER['HOME'] . '/files/private/secrets.json';
-	if ( ! file_exists( $secretsFile ) ) {
-		die( 'No secrets file found. Aborting!' );
-	}
-	$secretsContents = file_get_contents( $secretsFile );
-	$secrets         = json_decode( $secretsContents, 1 );
-	if ( $secrets == false ) {
-		die( 'Could not parse json in secrets file. Aborting!' );
-	}
-	$secrets += $defaults;
-	$missing = array_diff( $requiredKeys, array_keys( $secrets ) );
-	if ( ! empty( $missing ) ) {
-		die( 'Missing required keys in json secrets file: ' . implode( ',', $missing ) . '. Aborting!' );
-	}
+  $secretsFile = $_SERVER['HOME'] . '/files/private/secrets.json';
+  if (!file_exists($secretsFile)) {
+    die('No secrets file found. Aborting!');
+  }
+  $secretsContents = file_get_contents($secretsFile);
+  $secrets         = json_decode($secretsContents, 1);
+  if ($secrets == FALSE) {
+    die('Could not parse json in secrets file. Aborting!');
+  }
+  $secrets += $defaults;
+  $missing = array_diff($requiredKeys, array_keys($secrets));
+  if (!empty($missing)) {
+    die('Missing required keys in json secrets file: ' . implode(',', $missing) . '. Aborting!');
+  }
 
-	return $secrets;
+  return $secrets;
 }
 
 /**
- * Send a notification to slack
+ * Send a notification to slack.
  */
-function _slack_notification( $channel, $username, $text, $icon_url, $attachment = false ) {
-    $defaults = array();
-	$secrets  = _get_secrets( array( 'slack_url' ), $defaults );
+function _slack_notification($channel, $username, $text, $icon_url, $attachment = FALSE) {
+  $defaults = array();
+  $secrets = _get_secrets(array('slack_url'), $defaults);
 
-	$post = array(
-		'username' => $username,
-		'channel'  => $channel,
-		'icon_url' => $icon_url,
-		'mrkdwn' => true,
-	);
+  $post = array(
+    'username' => $username,
+    'channel'  => $channel,
+    'icon_url' => $icon_url,
+    'mrkdwn' => TRUE,
+  );
 
-	if ( $attachment !== false && is_array( $attachment ) ) {
-		$post['attachments'] = array( $attachment );
-	} else {
-		$post['text'] = $text;
-	}
+  if ($attachment !== FALSE && is_array($attachment)) {
+    $post['attachments'] = array($attachment);
+  }
+  else {
+    $post['text'] = $text;
+  }
 
-	$payload = json_encode( $post );
-	$ch      = curl_init();
-	curl_setopt( $ch, CURLOPT_URL, $secrets['slack_url'] );
-	curl_setopt( $ch, CURLOPT_POST, 1 );
-	curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
-	curl_setopt( $ch, CURLOPT_TIMEOUT, 5 );
-	curl_setopt( $ch, CURLOPT_HTTPHEADER, array( 'Content-Type: application/json' ) );
-	curl_setopt( $ch, CURLOPT_POSTFIELDS, $payload );
+  $payload = json_encode($post);
+  $ch      = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $secrets['slack_url']);
+  curl_setopt($ch, CURLOPT_POST, 1);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+  curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json'));
+  curl_setopt($ch, CURLOPT_POSTFIELDS, $payload);
 
-	$result = curl_exec( $ch );
-	curl_close( $ch );
+  curl_exec($ch);
+  curl_close($ch);
 }
