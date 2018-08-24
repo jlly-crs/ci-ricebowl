@@ -1,0 +1,6 @@
+{
+    "name": "crs/ci-ricebowl",
+    "require": {
+        "cloudinary/cloudinary_php": "^1.10"
+    }
+}
