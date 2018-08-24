@@ -1,5 +1,13 @@
 <?php
 
+require __DIR__ . '/../vendor/autoload.php';
+
+\Cloudinary::config(array(
+  "cloud_name" => getenv('CLOUDINARY_CLOUD_NAME'),
+  "api_key" => getenv('CLOUDINARY_KEY'),
+  "api_secret" => getenv('CLOUDINARY_SECRET')
+));
+
 /**
  * @file
  * Contains the slack notification helper.
@@ -67,21 +75,12 @@ switch ($slack_type) {
   case 'visual_different':
     // Post the File Using Uploads.IM.
     $file_name_with_full_path = $argv[2];
-    $target_url = 'http://uploads.im/api';
-    $cFile = curl_file_create($file_name_with_full_path);
-    $post = array('format' => 'json', 'file_contents' => $cFile);
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $target_url);
-    curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-    $curl_response = json_decode(curl_exec($curl));
-    curl_close($curl);
+    $response = \Cloudinary\Uploader::upload($file_name_with_full_path);
 
     $slack_agent = 'BackstopJS Visual Regression';
     $slack_icon = 'https://garris.github.io/BackstopJS/assets/lemurFace.png';
     $slack_color = '#800080';
-    $slack_message = 'Visual regression tests failed! Please review the <https://dashboard.pantheon.io/sites/' . getenv('SITE_UUID') . '#' . getenv('TERMINUS_ENV') . '/code|the ' . getenv('TERMINUS_ENV') . ' environment>! ' . $curl_response->data->thumb_url;
+    $slack_message = 'Visual regression tests failed! Please review the <https://dashboard.pantheon.io/sites/' . getenv('SITE_UUID') . '#' . getenv('TERMINUS_ENV') . '/code|the ' . getenv('TERMINUS_ENV') . ' environment>! ' . $response['secure_url'];
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -194,18 +193,9 @@ switch ($slack_type) {
 
     // Post the File Using Uploads.IM.
     $file_name_with_full_path = $argv[2];
-    $target_url = 'http://uploads.im/api';
-    $cFile = curl_file_create($file_name_with_full_path);
-    $post = array('format' => 'json', 'file_contents' => $cFile);
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_URL, $target_url);
-    curl_setopt($curl, CURLOPT_POST, 1);
-    curl_setopt($curl, CURLOPT_POSTFIELDS, $post);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, TRUE);
-    $curl_response = json_decode(curl_exec($curl));
-    curl_close($curl);
+    $response = \Cloudinary\Uploader::upload($file_name_with_full_path);
 
-    $slack_message = 'Your updates have been tested and applied. Enjoy your updated site! - ' . $curl_response->data->thumb_url;
+    $slack_message = 'Your updates have been tested and applied. Enjoy your updated site! - ' . $response['secure_url'];
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 }
