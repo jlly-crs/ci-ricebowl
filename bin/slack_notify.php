@@ -18,7 +18,7 @@ require_once __DIR__ . '/slack_helper.php';
 
 // Assemble the arguments.
 $slack_type = $argv[1];
-$slack_channel = getenv('DE_SLACK_CHANNEL');
+$slack_channel = getenv('SLACK_CHANNEL');
 
 switch ($slack_type) {
   case 'wordpress_updates':
