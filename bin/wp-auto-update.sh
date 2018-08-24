@@ -104,14 +104,14 @@ else
         echo -e "\nVisual regression tests passed between the ${TERMINUS_ENV} multidev and live."
         php -f bin/slack_notify.php visual_same
 
-        # # enable git mode on dev
-        # echo -e "\nEnabling git mode on the dev environment..."
-        # terminus connection:set $SITE_UUID.dev git
+        # enable git mode on dev
+        echo -e "\nEnabling git mode on the dev environment..."
+        terminus connection:set $SITE_UUID.dev git
 
-        # # merge the multidev back to dev
-        # echo -e "\nMerging the ${TERMINUS_ENV} multidev back into the dev environment (master)..."
-        # # php -f bin/slack_notify.php pantheon_deploy dev
-        # terminus multidev:merge-to-dev $SITE_UUID.$TERMINUS_ENV
+        # merge the multidev back to dev
+        echo -e "\nMerging the ${TERMINUS_ENV} multidev back into the dev environment (master)..."
+        php -f bin/slack_notify.php pantheon_deploy dev
+        terminus multidev:merge-to-dev $SITE_UUID.$TERMINUS_ENV
 
         # # deploy to test
         # echo -e "\nDeploying the updates from dev to test..."
