@@ -33,7 +33,9 @@ switch ($slack_type) {
     $slack_agent = 'Wordpress Update Manager';
     $slack_icon = 'https://s.w.org/style/images/about/WordPress-logotype-wmark.png';
     $slack_color = '#0678BE';
-    $slack_message = array('Wordpress core has an update *available*: ' . str_replace('Update to ', '', str_replace('\n', '', shell_exec('terminus upstream:updates:list ${SITE_UUID}.${TERMINUS_ENV} --field=message'))));
+    $slack_message = array(
+      'Wordpress core has an update *available*: ' . str_replace('Update to ', '', str_replace('\n', '', shell_exec('terminus upstream:updates:list ${SITE_UUID}.${TERMINUS_ENV} --field=message'))),
+    );
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -79,7 +81,7 @@ switch ($slack_type) {
     $slack_agent = 'BackstopJS Visual Regression';
     $slack_icon = 'https://garris.github.io/BackstopJS/assets/lemurFace.png';
     $slack_color = '#800080';
-    $slack_message = 'Visual regression tests failed! Please review the <https://dashboard.pantheon.io/sites/${SITE_UUID}#${TERMINUS_ENV}/code|the ${TERMINUS_ENV} environment>! ' . $curl_response->data->thumb_url;
+    $slack_message = 'Visual regression tests failed! Please review the <https://dashboard.pantheon.io/sites/' . getenv('SITE_UUID') . '#' . getenv('TERMINUS_ENV') . '/code|the ' . getenv('TERMINUS_ENV') . ' environment>! ' . $curl_response->data->thumb_url;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -134,7 +136,7 @@ switch ($slack_type) {
     $slack_message = "Applying updates for Wordpress contrib plugins...";
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
-    $slack_message['Operation'] = 'terminus drush pm-updatecode';
+    $slack_message['Operation'] = 'terminus wp plugin update --all';
     $slack_message['Environment'] = '`ci-update`';
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
