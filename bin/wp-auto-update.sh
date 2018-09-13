@@ -14,7 +14,7 @@ php -f bin/slack_notify.php pantheon_multidev_setup
 echo -e "\nDeleting the ${TERMINUS_ENV} multidev environment..."
 terminus multidev:delete $SITE_UUID.$TERMINUS_ENV --delete-branch --yes
 echo -e "\nRe-creating the ${TERMINUS_ENV} multidev environment..."
-terminus multidev:create $SITE_UUID.live $TERMINUS_ENV
+terminus multidev:create $SITE_UUID.dev $TERMINUS_ENV
 
 # check for upstream updates
 echo -e "\nChecking for upstream updates on the ${TERMINUS_ENV} multidev..."
