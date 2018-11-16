@@ -114,21 +114,21 @@ else
         terminus multidev:merge-to-dev $SITE_UUID.$TERMINUS_ENV
 
         # # deploy to test
-        # echo -e "\nDeploying the updates from dev to test..."
-        # # php -f bin/slack_notify.php pantheon_deploy test
-        # terminus env:deploy $SITE_UUID.test --sync-content --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
+        echo -e "\nDeploying the updates from dev to test..."
+        php -f bin/slack_notify.php pantheon_deploy test
+        terminus env:deploy $SITE_UUID.test --sync-content --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
 
         # # backup the live site
-        # echo -e "\nBacking up the live environment..."
-        # # php -f bin/slack_notify.php pantheon_backup
-        # terminus backup:create $SITE_UUID.live --element=all --keep-for=30
+        echo -e "\nBacking up the live environment..."
+        php -f bin/slack_notify.php pantheon_backup
+        terminus backup:create $SITE_UUID.live --element=all --keep-for=30
 
         # # deploy to live
-        # echo -e "\nDeploying the updates from test to live..."
-        # # php -f bin/slack_notify.php pantheon_deploy live
-        # terminus env:deploy $SITE_UUID.live --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
+        echo -e "\nDeploying the updates from test to live..."
+        php -f bin/slack_notify.php pantheon_deploy live
+        terminus env:deploy $SITE_UUID.live --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
 
-        # echo -e "\nVisual regression tests passed! Wordpress updates deployed to live..."
-        # # php -f bin/slack_notify.php wizard_done `find . | grep document_0_desktop | grep test`
+        echo -e "\nVisual regression tests passed! Wordpress updates deployed to live..."
+        php -f bin/slack_notify.php wizard_done `find . | grep document_0_desktop | grep test`
     fi
 fi
