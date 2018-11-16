@@ -39,11 +39,15 @@ jobs:
 workflows:
   version: 2
   run_updates:
-    jobs:
-      triggers:
+     triggers:
       - schedule:
           cron: "0 0 * * *"
-      - updates
+          filters:
+            branches:
+              only:
+                - master
+     jobs:
+       - updates
 
 # machine:
 #   timezone:
