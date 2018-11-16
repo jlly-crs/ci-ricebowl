@@ -38,7 +38,7 @@ jobs:
 
 workflows:
   version: 2
-  run_updates:
+  nightly_updates:
      triggers:
       - schedule:
           cron: "0 0 * * *"
@@ -46,6 +46,10 @@ workflows:
             branches:
               only:
                 - master
+     jobs:
+       - updates
+       
+  run_updates:
      jobs:
        - updates
 
