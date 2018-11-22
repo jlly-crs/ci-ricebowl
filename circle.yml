@@ -48,18 +48,10 @@ workflows:
                 - master
      jobs:
        - updates
-           filters:
-            branches:
-              only:
-                - master
 
   run_updates:
      jobs:
        - updates
-            filters:
-             branches:
-               only:
-                 - master
 
 # machine:
 #   timezone:
