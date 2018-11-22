@@ -45,13 +45,21 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - CRSOnboarding
      jobs:
        - updates
-       
+           filters:
+              branches:
+                 only:
+                   - CRSOnboarding           
+
   run_updates:
      jobs:
        - updates
+            filters:
+              branches:
+                 only:
+                   - CRSOnboarding
 
 # machine:
 #   timezone:
