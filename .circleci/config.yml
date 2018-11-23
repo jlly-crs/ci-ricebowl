@@ -48,11 +48,14 @@ workflows:
                 - CCGP
      jobs:
        - updates
-       
+
   run_updates:
      jobs:
-       - updates
-
+       - updates:
+           filters:
+              branches:
+                 only:
+                   - CCGP
 # machine:
 #   timezone:
 #     America/Chicago
