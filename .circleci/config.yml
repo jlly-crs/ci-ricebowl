@@ -2,7 +2,7 @@ defaults: &defaults
   docker:
     - image: drupaldocker/php:7.1-cli
   working_directory: ~/wp-updates
-  environment:
+  environment: "crs-onboarding"
     TZ: "/usr/share/zoneinfo/America/Chicago"
     TERMINUS_ENV: "ci-update"
 
