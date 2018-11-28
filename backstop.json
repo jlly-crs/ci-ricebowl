@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://live-crsespanol.pantheonsite.io/",
+      "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -21,8 +21,8 @@
     },
  {
       "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "url": "https://live-crsespanol.pantheonsite.io/",
+      "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
