@@ -1,0 +1,103 @@
+defaults: &defaults
+  docker:
+    - image: drupaldocker/php:7.1-cli
+  working_directory: ~/wp-updates
+  environment:
+    TZ: "/usr/share/zoneinfo/America/Chicago"
+    TERMINUS_ENV: "ci-update"
+    SITE_UUID: "crsethicaltrade"
+
+version: 2
+jobs:
+    updates:
+        <<: *defaults
+        steps:
+            - checkout
+            - restore_cache:
+                keys:
+                    - composer-cache
+                    - terminus-install
+
+            - run:
+                name: dependencies
+                command: ./bin/set-up-globals.sh
+
+            - run:
+                name: run updates
+                command: ./bin/wp-auto-update.sh
+
+            - save_cache:
+                key: composer-cache
+                paths:
+                    - $HOME/.composer/cache
+
+            - save_cache:
+                key: terminus-install
+                paths:
+                    - $HOME/.terminus
+                    - $HOME/terminus
+
+workflows:
+  version: 2
+  nightly_updates:
+     triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - CRSEthicalTrade
+     jobs:
+       - updates
+
+  run_updates:
+     jobs:
+       - updates:
+           filters:
+              branches:
+                 only:
+                   - CRSEthicalTrade
+# machine:
+#   timezone:
+#     America/Chicago
+
+#   node:
+#     version: 6.1.0
+
+#   php:
+#     version: 7.0.11
+
+#   environment:
+#     # In addition to the environment variables defined in this file, these
+#     # other variables are defined in the Circle CI UI.
+#     #
+#     # SITE_UUID:              UUID of the Pantheon site to run tests on
+#     # TERMINUS_MACHINE_TOKEN: The Pantheon machine token
+#     # SLACK_CHANNEL:          The Slack channel for sending notifications
+#     # SLACK_URL:         The Slack endpoint for sending notifications
+#     #
+#     PATH: $PATH:~/.composer/vendor/bin:~/.config/composer/vendor/bin
+
+# dependencies:
+#   cache_directories:
+#     - ~/.composer
+#     - /opt/circleci/nodejs/v4.2.6/lib/node_modules
+#     - /opt/circleci/nodejs/v4.2.6/bin
+
+#   pre:
+#     # Kick off Slack Notification
+#     - php -f bin/slack_notify.php circle_start "${CIRCLE_BUILD_NUM}"
+
+#     # Install BackstopJS and SlimerJS
+#     - npm install -g backstopjs
+#     - npm install -g slimerjs
+
+#     # Install Terminus
+#     - composer global require -n  "pantheon-systems/terminus:1.4.1"
+
+#   override:
+#     - ./bin/drupal-auto-update.sh
+
+# test:
+#   override:
+#     - ls
