@@ -18,7 +18,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    },    
+    }    
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
