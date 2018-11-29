@@ -5,6 +5,7 @@ defaults: &defaults
   environment:
     TZ: "/usr/share/zoneinfo/America/Chicago"
     TERMINUS_ENV: "ci-update"
+    SITE_UUID: "confrontglobalpoverty"
 
 version: 2
 jobs:
