@@ -9,19 +9,7 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://live-crsespanol.pantheonsite.io/",
-      "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/",
-      "hideSelectors": [],
-      "selectors": [
-        "document"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
-    },
- {
-      "label": "Recipes",
-      "url": "https://live-crsespanol.pantheonsite.io/",
+      "url": "https://www.crsespanol.org/",
       "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
