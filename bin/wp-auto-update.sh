@@ -128,7 +128,7 @@ else
 #        php -f bin/slack_notify.php pantheon_deploy live
 #        terminus env:deploy $SITE_UUID.live --cc --note="Auto deploy of Wordpress updates (core, plugins)" --updatedb
 
-        echo -e "\nVisual regression tests passed! Wordpress updates deployed to live..."
+#        echo -e "\nVisual regression tests passed! Wordpress updates deployed to live..."
         php -f bin/slack_notify.php wizard_done `find . | grep document_0_desktop | grep test`
     fi
 fi
