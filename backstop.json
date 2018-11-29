@@ -18,18 +18,6 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    },
- {
-      "label": "Recipes",
-      "url": "https://ethicaltrade.crs.org/",
-      "referenceUrl": "https://ci-update-crsethicaltrade.pantheonsite.io/",
-      "hideSelectors": [],
-      "selectors": [
-        "document"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
     }    
   ],
   "paths": {
