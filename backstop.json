@@ -18,6 +18,66 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Guide",
+      "url": "https://ethicaltrade.crs.org/guide/",
+      "referenceUrl": "https://ci-update-crsethicaltrade.pantheonsite.io/guide/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Host-an-event",
+      "url": "https://ethicaltrade.crs.org/host-an-event/consignment-sale/",
+      "referenceUrl": "https://ci-update-crsethicaltrade.pantheonsite.io/host-an-event/consignment-sale/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Community-stories",
+      "url": "https://ethicaltrade.crs.org/host-an-event/community-stories",
+      "referenceUrl": "https://ci-update-crsethicaltrade.pantheonsite.io/community-stories/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Community-stories-mexico",
+      "url": "https://ethicaltrade.crs.org/community-stories/mexico/",
+      "referenceUrl": "https://ci-update-crsethicaltrade.pantheonsite.io/community-stories/mexico/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Get-involved-resources",
+      "url": "https://ethicaltrade.crs.org/get-involved/resources/",
+      "referenceUrl": "https://ci-update-crsethicaltrade.pantheonsite.io/get-involved/resources/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
     }    
   ],
   "paths": {
