@@ -18,6 +18,42 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Quienes-somos",
+      "url": "https://www.crsespanol.org/quienes-somos/empleos/",
+      "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/quienes-somos/empleos/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Contactenos",
+      "url": "https://www.crsespanol.org/quienes-somos/contactenos/",
+      "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/contactenos/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Como-servimos",
+      "url": "https://www.crsespanol.org/como-servimos/agua-y-saneamiento/",
+      "referenceUrl": "https://ci-update-crsespanol.pantheonsite.io/agua-y-saneamiento/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
     }    
   ],
   "paths": {
