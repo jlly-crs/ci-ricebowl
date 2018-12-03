@@ -18,7 +18,55 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }    
+    },
+    {
+      "label": "Action-center",
+      "url": "https://www.confrontglobalpoverty.org/act/action-center/",
+      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/act/action-center/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.05
+    },
+    {
+      "label": "Toolkit",
+      "url": "https://www.confrontglobalpoverty.org/act/toolkit/",
+      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/act/toolkit/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.05
+    },
+    {
+      "label": "Poverty-and-climate-change",
+      "url": "https://www.confrontglobalpoverty.org/act/poverty-and-climate-change/",
+      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/act/poverty-and-climate-change/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.05
+    },
+    {
+      "label": "Hunger",
+      "url": "https://www.confrontglobalpoverty.org/issues/hunger/",
+      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/issues/hunger/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.05
+    },
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
