@@ -18,6 +18,42 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Us-based-staff",
+      "url": "https://onboarding.crs.org/u-s-based-staff/after-you-start/",
+      "referenceUrl": "https://ci-update-crs-onboarding.pantheonsite.io/u-s-based-staff/after-you-start/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Faq",
+      "url": "https://onboarding.crs.org/faq/",
+      "referenceUrl": "https://ci-update-crs-onboarding.pantheonsite.io/faq/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "About-us",
+      "url": "https://onboarding.crs.org/about-us/agency-mission/",
+      "referenceUrl": "https://ci-update-crs-onboarding.pantheonsite.io/about-us/agency-mission/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
     }    
   ],
   "paths": {
