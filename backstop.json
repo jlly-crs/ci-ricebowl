@@ -46,7 +46,7 @@
     {
       "label": "Cart",
       "url": "https://gifts.crs.org/cart",
-      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/cart
+      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/cart",
       "hideSelectors": [],
       "selectors": [
         "document"
