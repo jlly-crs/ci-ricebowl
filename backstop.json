@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://ics.crs.org/",
+      "referenceUrl": "https://ci-update-institute-for-capacity-strengthening.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,46 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+    {
+      "label": "Monitoring-and-evaluation-accountability-and-learning-meal",
+      "url": "https://ics.crs.org/monitoring-and-evaluation-accountability-and-learning-meal/",
+      "referenceUrl": "https://ci-update-institute-for-capacity-strengthening.pantheonsite.io/monitoring-and-evaluation-accountability-and-learning-meal/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Courses",
+      "url": "https://ics.crs.org/courses/",
+      "referenceUrl": "https://ci-update-institute-for-capacity-strengthening.pantheonsite.io/courses/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Resource-library",
+      "url": "https://ics.crs.org/resource-library/",
+      "referenceUrl": "https://ci-update-institute-for-capacity-strengthening.pantheonsite.io/resource-library/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Simple-memorandum-understanding",
+      "url": "https://ics.crs.org/resource/sample-memorandum-understanding-mou-church-partners/",
+      "referenceUrl": "https://ci-update-institute-for-capacity-strengthening.pantheonsite.io/resource/sample-memorandum-understanding-mou-church-partners/",
       "hideSelectors": [],
       "selectors": [
         "document"
