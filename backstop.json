@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://gifts.crs.org/",
+      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,46 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+    {
+      "label": "Give-gift-help-emergencies",
+      "url": "https://gifts.crs.org/give-gift-help-emergencies/safe-space-children?ms=011006",
+      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/give-gift-help-emergencies/safe-space-children?ms=011006",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Support-food-and-farming",
+      "url": "https://gifts.crs.org/support-food-and-farming",
+      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/support-food-and-farming",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Cart",
+      "url": "https://gifts.crs.org/cart",
+      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/cart
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+    {
+      "label": "Give-clean-water-overseas",
+      "url": "https://gifts.crs.org/give-clean-water-overseas/give-community-watering-station",
+      "referenceUrl": "https://ci-update-crs-store.pantheonsite.io/give-clean-water-overseas/give-community-watering-station",
       "hideSelectors": [],
       "selectors": [
         "document"
