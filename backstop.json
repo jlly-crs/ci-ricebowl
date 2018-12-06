@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://www.crs.org/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -20,9 +20,69 @@
       "misMatchThreshold" : 0.08
     },
  {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "label": "Careers",
+      "url": "https://www.crs.org/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/careers/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "Get-involved-prayer-resources",
+      "url": "https://www.crs.org/get-involved/prayer-resources/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/get-involved/prayer-resources/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "Ways-to-give",
+      "url": "https://www.crs.org/ways-to-give/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/ways-to-give/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "Our-work-overseas",
+      "url": "https://www.crs.org/our-work-overseas/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/our-work-overseas/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "Get-involved",
+      "url": "https://www.crs.org/get-involved/participate/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/get-involved/participate/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "About",
+      "url": "https://www.crs.org/about/financial-reports/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/financial-reports/",
       "hideSelectors": [],
       "selectors": [
         "document"
