@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://annualreport.crs.org/",
+      "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -20,9 +20,9 @@
       "misMatchThreshold" : 0.08
     },
  {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "label": "Financials",
+      "url": "https://annualreport.crs.org/financials/",
+      "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/financials",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -31,6 +31,42 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     }    
+ {
+      "label": "Our-work",
+      "url": "https://annualreport.crs.org/our-work/",
+      "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/our-work",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "At-a-glance",
+      "url": "https://annualreport.crs.org/at-a-glance/",
+      "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/at-a-glance/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
+ {
+      "label": "Agency-leadership",
+      "url": "https://annualreport.crs.org/agency-leadership/",
+      "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/agency-leadership/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
