@@ -21,8 +21,8 @@
     },
  {
       "label": "Careers",
-      "url": "https://www.crs.org/",
-      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/careers/",
+      "url": "https://www.crs.org/about/careers/",
+      "referenceUrl": "https://ci-update-catholic-relief-services.pantheonsite.io/about/careers/",
       "hideSelectors": [],
       "selectors": [
         "document"
