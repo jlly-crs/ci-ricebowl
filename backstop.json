@@ -30,7 +30,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "Get-involved-prayer-resources",
       "url": "https://www.crs.org/get-involved/prayer-resources/",
@@ -42,7 +42,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "Ways-to-give",
       "url": "https://www.crs.org/ways-to-give/",
@@ -54,7 +54,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "Our-work-overseas",
       "url": "https://www.crs.org/our-work-overseas/",
@@ -66,7 +66,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "Get-involved",
       "url": "https://www.crs.org/get-involved/participate/",
@@ -78,7 +78,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "About",
       "url": "https://www.crs.org/about/financial-reports/",
