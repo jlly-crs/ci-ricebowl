@@ -9,20 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
-      "hideSelectors": [],
-      "selectors": [
-        "document"
-      ],
-      "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
-    },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "url": "https://sfo.crs.org/",
+      "referenceUrl": "https://ci-update-sfolanding.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
