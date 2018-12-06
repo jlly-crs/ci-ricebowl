@@ -30,7 +30,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }    
+    },    
  {
       "label": "Our-work",
       "url": "https://annualreport.crs.org/our-work/",
@@ -42,7 +42,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "At-a-glance",
       "url": "https://annualreport.crs.org/at-a-glance/",
@@ -54,7 +54,7 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }
+    },
  {
       "label": "Agency-leadership",
       "url": "https://annualreport.crs.org/agency-leadership/",
