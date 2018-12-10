@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://www.changingthewaywecare.org/",
+      "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -20,9 +20,45 @@
       "misMatchThreshold" : 0.08
     },
  {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "label": "Understand",
+      "url": "https://www.changingthewaywecare.org/understand/",
+      "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/understand/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Results-and-impact",
+      "url": "https://www.changingthewaywecare.org/results-and-impact/",
+      "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/results-and-impact/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Stories",
+      "url": "https://www.changingthewaywecare.org/stories/",
+      "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/stories/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Frequently-asked-questions",
+      "url": "https://www.changingthewaywecare.org/frequently-asked-questions/",
+      "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/frequently-asked-questions/",
       "hideSelectors": [],
       "selectors": [
         "document"
