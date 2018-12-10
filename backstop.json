@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://www.sharejourney.org/",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -20,9 +20,57 @@
       "misMatchThreshold" : 0.08
     },
  {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "label": "Real-refugee-stories",
+      "url": "https://www.sharejourney.org/real-refugee-stories/",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/real-refugee-stories/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Resource-library",
+      "url": "https://www.sharejourney.org/resource-library",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/resource-library/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Pilgrimage-walk-for-refugees",
+      "url": "https://www.sharejourney.org/pilgrimage-walk-for-refugees/",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/pilgrimage-walk-for-refugees/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Transformations-of-the-heart",
+      "url": "https://www.sharejourney.org/stories/transformations-of-the-heart/",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/transformations-of-the-heart/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Get-involved",
+      "url": "https://www.sharejourney.org/get-involved/",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/get-involved/",
       "hideSelectors": [],
       "selectors": [
         "document"
