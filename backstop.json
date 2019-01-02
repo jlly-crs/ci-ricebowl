@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://crsmaterials.crs.org/us-materials/crs-rice-bowl/",
+      "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/us-materials/crs-rice-bowl/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -20,9 +20,33 @@
       "misMatchThreshold" : 0.08
     },
  {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "label": "Cart",
+      "url": "https://crsmaterials.crs.org/cart/"",
+      "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/cart/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "us-materials/crs-ethical-trade",
+      "url": "https://crsmaterials.crs.org/us-materials/crs-ethical-trade/"",
+      "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/us-materials/crs-ethical-trade/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "materials/crs-rice-bowl",
+      "url": "https://crsmaterials.crs.org/category/material/crs-rice-bowl/"",
+      "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/category/material/crs-rice-bowl/",
       "hideSelectors": [],
       "selectors": [
         "document"
