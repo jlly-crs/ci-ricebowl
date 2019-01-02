@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://ghs.crs.org/",
+      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,10 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+   {
+      "label": "Lesson-plans",
+      "url": "https://ghs.crs.org/lesson-plans",
+      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/lesson-plans",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -30,7 +30,43 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }    
+    }, 
+   {
+      "label": "Signup",
+      "url": "https://ghs.crs.org/signup",
+      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/signup",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Events",
+      "url": "https://ghs.crs.org/events",
+      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/events",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Littleflower",
+      "url": "https://ghs.crs.org/littleflower",
+      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/littleflower",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
