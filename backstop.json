@@ -21,7 +21,7 @@
     },
  {
       "label": "Cart",
-      "url": "https://crsmaterials.crs.org/cart/"",
+      "url": "https://crsmaterials.crs.org/cart/",
       "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/cart/",
       "hideSelectors": [],
       "selectors": [
@@ -33,7 +33,7 @@
     },
  {
       "label": "us-materials/crs-ethical-trade",
-      "url": "https://crsmaterials.crs.org/us-materials/crs-ethical-trade/"",
+      "url": "https://crsmaterials.crs.org/us-materials/crs-ethical-trade/",
       "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/us-materials/crs-ethical-trade/",
       "hideSelectors": [],
       "selectors": [
@@ -45,7 +45,7 @@
     },
  {
       "label": "materials/crs-rice-bowl",
-      "url": "https://crsmaterials.crs.org/category/material/crs-rice-bowl/"",
+      "url": "https://crsmaterials.crs.org/category/material/crs-rice-bowl/",
       "referenceUrl": "https://ci-update-crsmaterials.pantheonsite.io/category/material/crs-rice-bowl/",
       "hideSelectors": [],
       "selectors": [
