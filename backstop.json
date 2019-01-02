@@ -8,9 +8,9 @@
   ],
   "scenarios": [
     {
-      "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "label": "Nutrition",
+      "url": "https://rfsp.crs.org/nutrition/",
+      "referenceUrl": "https://ci-update-rfsp1.pantheonsite.io/nutrition/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -20,9 +20,33 @@
       "misMatchThreshold" : 0.08
     },
  {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+      "label": "Videos",
+      "url": "https://rfsp.crs.org/videos/",
+      "referenceUrl": "https://ci-update-rfsp1.pantheonsite.io/videos/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Contact-us",
+      "url": "https://rfsp.crs.org/contact-us/",
+      "referenceUrl": "https://ci-update-rfsp1.pantheonsite.io/contact-us/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+ {
+      "label": "Photo-gallery",
+      "url": "https://rfsp.crs.org/photo-gallery/",
+      "referenceUrl": "https://ci-update-rfsp1.pantheonsite.io/photo-gallery/",
       "hideSelectors": [],
       "selectors": [
         "document"
