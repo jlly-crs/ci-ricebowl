@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://vulnerablechildren.crs.org/",
+      "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,34 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+   {
+      "label": "Household-economic-strengthening",
+      "url": "https://vulnerablechildren.crs.org/household-economic-strengthening",
+      "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/household-economic-strengthening",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }, 
+   {
+      "label": "Education",
+      "url": "https://vulnerablechildren.crs.org/education",
+      "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/education",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Bringing-health-services-vulnerable-children-and-their-families",
+      "url": "https://vulnerablechildren.crs.org/health-and-nutrition/case-studies/bringing-health-services-vulnerable-children-and-their-families",
+      "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/health-and-nutrition/case-studies/bringing-health-services-vulnerable-children-and-their-families",
       "hideSelectors": [],
       "selectors": [
         "document"
