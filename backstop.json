@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://asa.crs.org/",
+      "referenceUrl": "https://ci-update-crs-asa.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,46 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+   {
+      "label": "Recursos",
+      "url": "https://asa.crs.org/recursos/",
+      "referenceUrl": "https://ci-update-crs-asa.pantheonsite.io/recursos/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }, 
+   {
+      "label": "Asa-blog",
+      "url": "https://asa.crs.org/asa-blog/",
+      "referenceUrl": "https://ci-update-crs-asa.pantheonsite.io/asa-blog/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Nuestro-enfoque",
+      "url": "https://asa.crs.org/quienes-somos/nuestro-enfoque/",
+      "referenceUrl": "https://ci-update-crs-asa.pantheonsite.io/quienes-somos/nuestro-enfoque/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Bienvenidos-al-blog-de-agua-verde",
+      "url": "https://asa.crs.org/2016/12/bienvenidos-al-blog-de-agua-verde/",
+      "referenceUrl": "https://ci-update-crs-asa.pantheonsite.io/2016/12/bienvenidos-al-blog-de-agua-verde/",
       "hideSelectors": [],
       "selectors": [
         "document"
