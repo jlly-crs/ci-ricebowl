@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://socy.crs.org/",
+      "referenceUrl": "https://ci-update-crs-socy.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,46 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+   {
+      "label": "Success-stories",
+      "url": "https://socy.crs.org/success-stories/",
+      "referenceUrl": "https://ci-update-crs-socy.pantheonsite.io/success-stories/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }, 
+   {
+      "label": "Sharifa-takes-charge-of-her-life-after-dreams-mentorship/",
+      "url": "https://socy.crs.org/sharifa-takes-charge-of-her-life-after-dreams-mentorship/",
+      "referenceUrl": "https://ci-update-crs-socy.pantheonsite.io/sharifa-takes-charge-of-her-life-after-dreams-mentorship/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Background",
+      "url": "https://socy.crs.org/background/",
+      "referenceUrl": "https://ci-update-crs-socy.pantheonsite.io/background/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Contact-us",
+      "url": "https://socy.crs.org/contact-us/",
+      "referenceUrl": "https://ci-update-crs-socy.pantheonsite.io/contact-us/",
       "hideSelectors": [],
       "selectors": [
         "document"
