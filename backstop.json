@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://www.crsricebowl.org/",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
+      "url": "https://smileprojectnigeria.crs.org/",
+      "referenceUrl": "https://ci-update-smileprojectnigeria.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -19,10 +19,10 @@
       "delay": 500,
       "misMatchThreshold" : 0.08
     },
- {
-      "label": "Recipes",
-      "url": "https://www.crsricebowl.org/recipe",
-      "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
+   {
+      "label": "Page 439",
+      "url": "https://smileprojectnigeria.crs.org/?page_id=439",
+      "referenceUrl": "https://ci-update-smileprojectnigeria.pantheonsite.io/?page_id=439",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -30,7 +30,43 @@
       "readyEvent": null,
       "delay": 500,
       "misMatchThreshold" : 0.08
-    }    
+    }, 
+   {
+      "label": "Page 36",
+      "url": "https://smileprojectnigeria.crs.org/?page_id=36",
+      "referenceUrl": "https://ci-update-smileprojectnigeria.pantheonsite.io/?page_id=36",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Page 324",
+      "url": "https://smileprojectnigeria.crs.org/?page_id=324",
+      "referenceUrl": "https://ci-update-smileprojectnigeria.pantheonsite.io/?page_id=324",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    },
+   {
+      "label": "Page 35",
+      "url": "https://smileprojectnigeria.crs.org/?page_id=35",
+      "referenceUrl": "https://ci-update-smileprojectnigeria.pantheonsite.io/?page_id=35",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 500,
+      "misMatchThreshold" : 0.08
+    }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
