@@ -13,6 +13,11 @@ require __DIR__ . '/../vendor/autoload.php';
  * Contains the slack notification helper.
  */
 
+// Load environment variables
+$cli_user = 'drupal@echidna.ca';
+$environment = 'CRSSOCY';
+
+
 // Load Slack helper functions.
 require_once __DIR__ . '/slack_helper.php';
 
@@ -88,7 +93,7 @@ switch ($slack_type) {
     $slack_agent = 'BackstopJS Visual Regression';
     $slack_icon = 'https://garris.github.io/BackstopJS/assets/lemurFace.png';
     $slack_color = '#800080';
-    $slack_message = 'Kicking off a Visual Regression test using BackstopJS between the `ci-update` and `live` environments...';
+    $slack_message = 'Kicking off a Visual Regression test using BackstopJS between the `$environment` and `live` environments...';
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -112,7 +117,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['CLI Version'] = '1.8.1';
-    $slack_message['CLI User'] = 'drupal@echidna.ca';
+    $slack_message['CLI User'] = $cli_user;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -124,7 +129,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['Operation'] = 'terminus upstream:updates:apply';
-    $slack_message['Environment'] = '`ci-update`';
+    $slack_message['Environment'] = $environment;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -136,7 +141,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['Operation'] = 'terminus wp plugin update --all';
-    $slack_message['Environment'] = '`ci-update`';
+    $slack_message['Environment'] = $environment;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -148,7 +153,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['Operation'] = 'terminus multidev:create';
-    $slack_message['Environment'] = '`ci-update`';
+    $slack_message['Environment'] = $environment;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
