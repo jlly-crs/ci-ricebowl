@@ -13,6 +13,10 @@ require __DIR__ . '/../vendor/autoload.php';
  * Contains the slack notification helper.
  */
 
+// Load environment variables
+$cli_user = 'Drupal@echidna.ca';
+$environment = 'ConfrontGlobalPoverty';
+
 // Load Slack helper functions.
 require_once __DIR__ . '/slack_helper.php';
 
@@ -112,7 +116,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['CLI Version'] = '1.8.1';
-    $slack_message['CLI User'] = 'drupal@echidna.ca';
+    $slack_message['CLI User'] = $cli_user;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -124,7 +128,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['Operation'] = 'terminus upstream:updates:apply';
-    $slack_message['Environment'] = '`ci-update`';
+    $slack_message['Environment'] = $environment;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -136,7 +140,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['Operation'] = 'terminus wp plugin update --all';
-    $slack_message['Environment'] = '`ci-update`';
+    $slack_message['Environment'] = $environment;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
@@ -148,7 +152,7 @@ switch ($slack_type) {
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     $slack_message = array();
     $slack_message['Operation'] = 'terminus multidev:create';
-    $slack_message['Environment'] = '`ci-update`';
+    $slack_message['Environment'] = $environment;
     _slack_tell($slack_message, $slack_channel, $slack_agent, $slack_icon, $slack_color);
     break;
 
