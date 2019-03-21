@@ -18,7 +18,7 @@
       "readyEvent": null,
       "readySelector": ".footer_top_block_m",
       "delay": 500,
-      "misMatchThreshold" : 0.12
+      "misMatchThreshold" : 12
     },
     {
       "label": "Guide",
@@ -29,8 +29,9 @@
         "document"
       ],
       "readyEvent": null,
+      "readySelector": ".footer_top_block_m",
       "delay": 500,
-      "misMatchThreshold" : 0.12
+      "misMatchThreshold" : 12
     },
     {
       "label": "Host-an-event",
@@ -42,7 +43,8 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.12
+      "readySelector": ".footer_top_block_m",
+      "misMatchThreshold" : 12
     },
     {
       "label": "Community-stories",
@@ -54,7 +56,7 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.12
+      "misMatchThreshold" : 12
     },
     {
       "label": "Community-stories-mexico",
@@ -66,7 +68,8 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.12
+      "readySelector": ".footer_top_block_m",
+      "misMatchThreshold" : 12
     },
     {
       "label": "Get-involved-resources",
@@ -77,8 +80,9 @@
         "document"
       ],
       "readyEvent": null,
+      "readySelector": ".footer_top_block_m",
       "delay": 500,
-      "misMatchThreshold" : 0.12
+      "misMatchThreshold" : 12
     }    
   ],
   "paths": {
