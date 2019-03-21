@@ -54,7 +54,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 900,
+      "readySelector": ".footer_top_block_m",
+      "delay": 1000,
       "misMatchThreshold" : 12
     },
     {
