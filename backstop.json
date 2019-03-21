@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://prayers.crs.org//",
       "referenceUrl": "https://ci-update-crs-virtual-votive.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": ["#votive-wrapper"],
       "selectors": [
         "document"
       ],
