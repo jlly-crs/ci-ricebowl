@@ -29,7 +29,6 @@
         "document"
       ],
       "readyEvent": null,
-      "readySelector": ".footer_top_block_m",
       "delay": 500,
       "misMatchThreshold" : 12
     },
@@ -43,7 +42,6 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "readySelector": ".footer_top_block_m",
       "misMatchThreshold" : 12
     },
     {
@@ -68,7 +66,6 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "readySelector": ".footer_top_block_m",
       "misMatchThreshold" : 12
     },
     {
@@ -80,7 +77,6 @@
         "document"
       ],
       "readyEvent": null,
-      "readySelector": ".footer_top_block_m",
       "delay": 500,
       "misMatchThreshold" : 12
     }    
