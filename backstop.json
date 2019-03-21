@@ -17,7 +17,7 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.08
+      "misMatchThreshold" : 0.12
     },
    {
       "label": "Household-economic-strengthening",
@@ -29,7 +29,7 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.08
+      "misMatchThreshold" : 0.1
     }, 
    {
       "label": "Education",
@@ -41,7 +41,7 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.08
+      "misMatchThreshold" : 0.1
     },
    {
       "label": "Bringing-health-services-vulnerable-children-and-their-families",
@@ -53,7 +53,7 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.08
+      "misMatchThreshold" : 0.1
     }    
   ],
   "paths": {
