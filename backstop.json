@@ -40,7 +40,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
+      "delay": 5000,
       "misMatchThreshold" : 0.08
     },
  {
