@@ -40,8 +40,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
  {
       "label": "Photo-gallery",
@@ -52,8 +52,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     }    
   ],
   "paths": {
