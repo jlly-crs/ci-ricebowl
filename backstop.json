@@ -28,8 +28,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.1
+      "delay": 800,
+      "misMatchThreshold" : 12
     }, 
    {
       "label": "Education",
@@ -40,8 +40,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.1
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
    {
       "label": "Bringing-health-services-vulnerable-children-and-their-families",
@@ -52,8 +52,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.1
+      "delay": 800,
+      "misMatchThreshold" : 12
     }    
   ],
   "paths": {
