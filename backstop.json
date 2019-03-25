@@ -35,7 +35,7 @@
       "label": "Contact-us",
       "url": "https://rfsp.crs.org/contact-us/",
       "referenceUrl": "https://ci-update-rfsp1.pantheonsite.io/contact-us/",
-      "hideSelectors": [],
+      "hideSelectors": ["#footerwrap"],
       "selectors": [
         "document"
       ],
