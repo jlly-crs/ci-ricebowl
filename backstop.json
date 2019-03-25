@@ -16,8 +16,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
  {
       "label": "Videos",
@@ -28,8 +28,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
  {
       "label": "Contact-us",
@@ -40,7 +40,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 800,
+      "delay": 1000,
       "misMatchThreshold" : 12
     },
  {
