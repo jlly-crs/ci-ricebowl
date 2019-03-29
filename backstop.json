@@ -35,12 +35,12 @@
       "label": "Contact-us",
       "url": "https://rfsp.crs.org/contact-us/",
       "referenceUrl": "https://ci-update-rfsp1.pantheonsite.io/contact-us/",
-      "hideSelectors": ["#footerwrap"],
+      "hideSelectors": [".footer"],
       "selectors": [
         "document"
       ],
       "readyEvent": null,
-      "delay": 1000,
+      "delay": 1200,
       "misMatchThreshold" : 12
     },
  {
