@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://www.sharejourney.org/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": ["#hero"],
       "selectors": [
         "document"
       ],
