@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://www.sharejourney.org/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -23,7 +23,7 @@
       "label": "Real-refugee-stories",
       "url": "https://www.sharejourney.org/real-refugee-stories/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/real-refugee-stories/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -35,7 +35,7 @@
       "label": "Resource-library",
       "url": "https://www.sharejourney.org/resource-library",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/resource-library/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -47,7 +47,7 @@
       "label": "Pilgrimage-walk-for-refugees",
       "url": "https://www.sharejourney.org/pilgrimage-walk-for-refugees/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/pilgrimage-walk-for-refugees/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -71,7 +71,7 @@
       "label": "Get-involved",
       "url": "https://www.sharejourney.org/get-involved/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/get-involved/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
