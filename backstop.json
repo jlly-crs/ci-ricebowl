@@ -24,7 +24,7 @@
       "label": "Real-refugee-stories",
       "url": "https://www.sharejourney.org/real-refugee-stories/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/real-refugee-stories/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -63,7 +63,7 @@
       "label": "Transformations-of-the-heart",
       "url": "https://www.sharejourney.org/stories/transformations-of-the-heart/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/transformations-of-the-heart/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
