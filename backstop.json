@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://vulnerablechildren.crs.org/",
       "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": [".title-subbrand"],
       "selectors": [
         "document"
       ],
@@ -24,7 +24,7 @@
       "label": "Household-economic-strengthening",
       "url": "https://vulnerablechildren.crs.org/household-economic-strengthening",
       "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/household-economic-strengthening",
-      "hideSelectors": [],
+      "hideSelectors": [".title-subbrand"],
       "selectors": [
         "document"
       ],
@@ -37,7 +37,7 @@
       "label": "Education",
       "url": "https://vulnerablechildren.crs.org/education",
       "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/education",
-      "hideSelectors": [],
+      "hideSelectors": [".title-subbrand"],
       "selectors": [
         "document"
       ],
@@ -50,7 +50,7 @@
       "label": "Bringing-health-services-vulnerable-children-and-their-families",
       "url": "https://vulnerablechildren.crs.org/health-and-nutrition/case-studies/bringing-health-services-vulnerable-children-and-their-families",
       "referenceUrl": "https://ci-update-crs-vc.pantheonsite.io/health-and-nutrition/case-studies/bringing-health-services-vulnerable-children-and-their-families",
-      "hideSelectors": [],
+      "hideSelectors": [".title-subbrand"],
       "selectors": [
         "document"
       ],
