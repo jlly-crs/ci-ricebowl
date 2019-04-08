@@ -16,7 +16,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1000,
+      "delay": 1200,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
