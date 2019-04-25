@@ -37,7 +37,7 @@
       "label": "Projects",
       "url": "https://coffeelands.crs.org/projects/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/projects/",
-      "hideSelectors": [],
+      "hideSelectors": [".fill"],
       "selectors": [
         "document"
       ],
