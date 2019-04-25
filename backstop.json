@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://coffeelands.crs.org/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/",
-      "hideSelectors": [".fill"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -24,7 +24,7 @@
       "label": "the-water-footprint-of-your-coffee",
       "url": "https://coffeelands.crs.org/2012/09/302-the-water-footprint-of-your-coffee/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/2012/09/302-the-water-footprint-of-your-coffee/",
-      "hideSelectors": [".fill"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -37,7 +37,7 @@
       "label": "Projects",
       "url": "https://coffeelands.crs.org/projects/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/projects/",
-      "hideSelectors": [".fill"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -50,7 +50,7 @@
       "label": "Blog",
       "url": "https://coffeelands.crs.org/blog/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/blog/",
-      "hideSelectors": [".fill"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
@@ -63,7 +63,7 @@
       "label": "Research",
       "url": "https://coffeelands.crs.org/research/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/research/",
-      "hideSelectors": [".fill"],
+      "hideSelectors": [],
       "selectors": [
         "document"
       ],
