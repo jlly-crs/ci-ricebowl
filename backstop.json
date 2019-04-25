@@ -16,8 +16,9 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 800,
-      "misMatchThreshold" : 11
+      "delay": 1000,
+      "requireSameDimensions" : false,
+      "misMatchThreshold" : 12
     },
     {
       "label": "Quienes-somos",
@@ -28,8 +29,9 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 800,
-      "misMatchThreshold" : 11
+      "delay": 1000,
+      "requireSameDimensions" : false,
+      "misMatchThreshold" : 12
     },
     {
       "label": "Contactenos",
@@ -40,8 +42,9 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 800,
-      "misMatchThreshold" : 11
+      "delay": 1000,
+      "requireSameDimensions" : false,
+      "misMatchThreshold" : 12
     },
     {
       "label": "Como-servimos",
@@ -52,8 +55,9 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 800,
-      "misMatchThreshold" : 11
+      "delay": 1000,
+      "requireSameDimensions" : false,
+      "misMatchThreshold" : 12
     }    
   ],
   "paths": {
