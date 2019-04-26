@@ -16,7 +16,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1200,
+      "delay": 1400,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12.0
     },
@@ -29,7 +29,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1200,
+      "delay": 1400,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
@@ -42,7 +42,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1200,
+      "delay": 1400,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
@@ -55,7 +55,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1200,
+      "delay": 1400,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
@@ -68,7 +68,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1200,
+      "delay": 1400,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
@@ -81,7 +81,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1200,
+      "delay": 1400,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     }    
