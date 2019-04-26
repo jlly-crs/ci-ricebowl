@@ -16,8 +16,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
    {
       "label": "Success-stories",
@@ -28,8 +28,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     }, 
    {
       "label": "Sharifa-takes-charge-of-her-life-after-dreams-mentorship/",
@@ -40,8 +40,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
    {
       "label": "Background",
@@ -52,8 +52,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     },
    {
       "label": "Contact-us",
@@ -64,8 +64,8 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
-      "misMatchThreshold" : 0.08
+      "delay": 800,
+      "misMatchThreshold" : 12
     }    
   ],
   "paths": {
