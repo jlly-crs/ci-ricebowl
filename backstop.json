@@ -17,7 +17,6 @@
       ],
       "readyEvent": null,
       "delay": 1400,
-      "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
  {
@@ -30,7 +29,6 @@
       ],
       "readyEvent": null,
       "delay": 1400,
-      "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
  {
@@ -43,7 +41,6 @@
       ],
       "readyEvent": null,
       "delay": 1400,
-      "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
  {
@@ -56,7 +53,6 @@
       ],
       "readyEvent": null,
       "delay": 1400,
-      "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
  {
