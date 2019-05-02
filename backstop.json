@@ -16,9 +16,9 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1400,
+      "delay": 1500,
       "requireSameDimensions" : false,
-      "misMatchThreshold" : 12.0
+      "misMatchThreshold" : 12
     },
  {
       "label": "Real-refugee-stories",
@@ -29,7 +29,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1400,
+      "delay": 1500,
       "misMatchThreshold" : 12
     },
  {
@@ -41,7 +41,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1400,
+      "delay": 1500,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
@@ -54,7 +54,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1400,
+      "delay": 1500,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     },
@@ -67,7 +67,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1400,
+      "delay": 1500,
       "misMatchThreshold" : 12
     },
  {
@@ -79,7 +79,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 1400,
+      "delay": 1500,
       "requireSameDimensions" : false,
       "misMatchThreshold" : 12
     }    
