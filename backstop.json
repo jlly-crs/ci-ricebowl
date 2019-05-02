@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://www.sharejourney.org/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": ["#hero",".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
       ],
@@ -24,7 +24,7 @@
       "label": "Real-refugee-stories",
       "url": "https://www.sharejourney.org/real-refugee-stories/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/real-refugee-stories/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": ["#hero", ".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
       ],
@@ -36,7 +36,7 @@
       "label": "Resource-library",
       "url": "https://www.sharejourney.org/resource-library",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/resource-library/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": ["#hero", ".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
       ],
@@ -49,7 +49,7 @@
       "label": "Pilgrimage-walk-for-refugees",
       "url": "https://www.sharejourney.org/pilgrimage-walk-for-refugees/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/pilgrimage-walk-for-refugees/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": ["#hero", ".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
       ],
@@ -62,7 +62,7 @@
       "label": "Transformations-of-the-heart",
       "url": "https://www.sharejourney.org/stories/transformations-of-the-heart/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/transformations-of-the-heart/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": ["#hero", ".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
       ],
@@ -74,7 +74,7 @@
       "label": "Get-involved",
       "url": "https://www.sharejourney.org/get-involved/",
       "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/get-involved/",
-      "hideSelectors": ["#hero"],
+      "hideSelectors": ["#hero", ".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
       ],
