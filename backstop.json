@@ -61,7 +61,7 @@
  {
       "label": "Transformations-of-the-heart",
       "url": "https://www.sharejourney.org/stories/transformations-of-the-heart/",
-      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/transformations-of-the-heart/",
+      "referenceUrl": "https://ci-update-crs-migration.pantheonsite.io/stories/transformations-of-the-heart/",
       "hideSelectors": ["#hero", ".et_social_sidebar_networks", ".et_social_visible_sidebar", ".et_social_slideright", ".et_social_animated", ".et_social_circle", ".et_social_sidebar_simple", ".et_social_mobile_on"],
       "selectors": [
         "document"
