@@ -18,7 +18,7 @@
       "readyEvent": null,
       "delay": 1500,
       "requireSameDimensions" : false,
-      "misMatchThreshold" : 14
+      "misMatchThreshold" : 12
     },
  {
       "label": "Real-refugee-stories",
@@ -30,7 +30,8 @@
       ],
       "readyEvent": null,
       "delay": 1500,
-      "misMatchThreshold" : 14
+      "requireSameDimensions" : false,
+      "misMatchThreshold" : 12
     },
  {
       "label": "Resource-library",
@@ -43,7 +44,7 @@
       "readyEvent": null,
       "delay": 1500,
       "requireSameDimensions" : false,
-      "misMatchThreshold" : 14
+      "misMatchThreshold" : 12
     },
  {
       "label": "Pilgrimage-walk-for-refugees",
@@ -56,7 +57,7 @@
       "readyEvent": null,
       "delay": 1500,
       "requireSameDimensions" : false,
-      "misMatchThreshold" : 14
+      "misMatchThreshold" : 12
     },
  {
       "label": "Transformations-of-the-heart",
@@ -68,7 +69,8 @@
       ],
       "readyEvent": null,
       "delay": 1500,
-      "misMatchThreshold" : 14
+      "requireSameDimensions" : false,
+      "misMatchThreshold" : 12
     },
  {
       "label": "Get-involved",
@@ -81,7 +83,7 @@
       "readyEvent": null,
       "delay": 1500,
       "requireSameDimensions" : false,
-      "misMatchThreshold" : 14
+      "misMatchThreshold" : 12
     }    
   ],
   "paths": {
