@@ -17,7 +17,7 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.08
+      "misMatchThreshold" : 11
     },
  {
       "label": "Recipes",
