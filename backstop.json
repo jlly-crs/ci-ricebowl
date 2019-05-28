@@ -17,7 +17,9 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.08
+      "misMatchThreshold" : 0.08,
+      onBeforeScript: 'onBefore.js',
+      onReadyScript: 'onReady.js'
     },
     {
       "label": "Action-center",
@@ -29,7 +31,9 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.05
+      "misMatchThreshold" : 0.05,
+      onBeforeScript: 'onBefore.js',
+      onReadyScript: 'onReady.js'
     },
     {
       "label": "Toolkit",
@@ -41,7 +45,9 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.05
+      "misMatchThreshold" : 0.05,
+      onBeforeScript: 'onBefore.js',
+      onReadyScript: 'onReady.js'
     },
     {
       "label": "Poverty-and-climate-change",
@@ -53,7 +59,9 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.05
+      "misMatchThreshold" : 0.05,
+      onBeforeScript: 'onBefore.js',
+      onReadyScript: 'onReady.js'
     },
     {
       "label": "Hunger",
@@ -65,7 +73,9 @@
       ],
       "readyEvent": null,
       "delay": 500,
-      "misMatchThreshold" : 0.05
+      "misMatchThreshold" : 0.05,
+      onBeforeScript: 'onBefore.js',
+      onReadyScript: 'onReady.js'
     }
   ],
   "paths": {
