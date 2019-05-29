@@ -97,7 +97,7 @@
   "engine": "puppeteer",
   "engineOptions": {
 	     "ignoreHTTPSErrors": true,
-	     "args": []
+	     "args": ["--no-sandbox"]
 },
   "debugWindow": false
 
