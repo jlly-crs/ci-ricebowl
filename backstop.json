@@ -1,4 +1,5 @@
 {
+  "id": "test",
   "viewports": [
     {
       "name": "desktop",
@@ -92,5 +93,12 @@
     "format" :  "junit" ,
     "testReportFileName": "ci-test-xunit",
     "testSuiteName" :  "backstopJS"
-  }
+  },
+  "engine": "puppeteer",
+  "engineOptions": {
+	     "ignoreHTTPSErrors": false,
+	     "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+},
+  "debugWindow": true
+
 }
