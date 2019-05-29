@@ -96,8 +96,8 @@
   },
   "engine": "puppeteer",
   "engineOptions": {
-	     "ignoreHTTPSErrors": false,
-	     "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+	     "ignoreHTTPSErrors": true,
+	     "args": []
 },
   "debugWindow": true
 
