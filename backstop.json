@@ -87,7 +87,7 @@
   },
   "report": [ "CI" ],
   "casperFlags": [],
-  "debug": false,
+  "debug": true,
   "port": 3001,
   "ci": {
     "format" :  "junit" ,
@@ -99,6 +99,6 @@
 	     "ignoreHTTPSErrors": true,
 	     "args": []
 },
-  "debugWindow": true
+  "debugWindow": false
 
 }
