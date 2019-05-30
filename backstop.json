@@ -34,5 +34,11 @@
     "format" :  "junit" ,
     "testReportFileName": "ci-test-xunit",
     "testSuiteName" :  "backstopJS"
-  }
+  },
+    "engine": "puppeteer",
+  "engineOptions": {
+	     "ignoreHTTPSErrors": true,
+	     "args": ["--no-sandbox"]
+},
+  "debugWindow": false
 }
