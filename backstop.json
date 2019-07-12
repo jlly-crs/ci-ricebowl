@@ -9,8 +9,8 @@
   "scenarios": [
     {
       "label": "Homepage",
-      "url": "https://ghs.crs.org/",
-      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/",
+      "url": "https://education.crs.org/",
+      "referenceUrl": "https://ci-update-crs-edu-issues.pantheonsite.io/",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -21,8 +21,8 @@
     },
     {
       "label": "Resources-school",
-      "url": "https://ghs.crs.org/resources/school",
-      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/resources/school",
+      "url": "https://education.crs.org/resources/school",
+      "referenceUrl": "https://ci-update-crs-edu-issues.pantheonsite.io/resources/school",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -33,8 +33,8 @@
     },
     {
       "label": "Core-programs-foodfast",
-      "url": "https://ghs.crs.org/core-programs/foodfast",
-      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/core-programs/foodfast",
+      "url": "https://education.crs.org/core-programs/FoodFast",
+      "referenceUrl": "https://ci-update-crs-edu-issues.pantheonsite.io/core-programs/FoodFast",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -45,8 +45,8 @@
     },
     {
       "label": "Register-now",
-      "url": "https://ghs.crs.org/register-now",
-      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/register-now",
+      "url": "https://education.crs.org/register-now",
+      "referenceUrl": "https://ci-update-crs-edu-issues.pantheonsite.io/register-now",
       "hideSelectors": [],
       "selectors": [
         "document"
@@ -57,8 +57,8 @@
     },
     {
       "label": "Issues-water",
-      "url": "https://ghs.crs.org/issues/water",
-      "referenceUrl": "https://ci-update-crs-education.pantheonsite.io/issues/water",
+      "url": "https://education.crs.org/issues/water",
+      "referenceUrl": "https://ci-update-crs-edu-issues.pantheonsite.io/issues/water",
       "hideSelectors": [],
       "selectors": [
         "document"
