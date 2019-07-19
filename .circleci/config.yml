@@ -5,7 +5,7 @@ defaults: &defaults
   environment:
     TZ: "/usr/share/zoneinfo/America/Chicago"
     TERMINUS_ENV: "ci-update"
-    SITE_UUID: "crs-education"
+    SITE_UUID: "crs-edu-issues"
 
 version: 2
 jobs:
