@@ -47,7 +47,7 @@
       "label": "Stories",
       "url": "https://www.changingthewaywecare.org/stories/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/stories/",
-      "hideSelectors": [".picture.ctwwc-stories--image img", ".img", "cn-top"],
+      "hideSelectors": ["picture", "ctwwc-stories--image", "img", "cn-top"],
       "selectors": [
         "document"
       ],
