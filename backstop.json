@@ -17,8 +17,32 @@
       ],
       "readyEvent": null,
       "delay": 800,
-      "misMatchThreshold" : 12
-    }    
+      "misMatchThreshold" : 0.12
+    } ,
+   {
+      "label": "Guidelines",
+      "url": "https://brandcenter.crs.org/references-guidelines/",
+      "referenceUrl": "https://ci-update-crs-identity.pantheonsite.io/references-guidelines/",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 800,
+      "misMatchThreshold" : 0.12
+   },
+   {
+      "label": "Templates",
+      "url": "https://brandcenter.crs.org/presentation-templates/",
+      "referenceUrl": "https://ci-update-crs-identity.pantheonsite.io/presentation-templates",
+      "hideSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": null,
+      "delay": 800,
+      "misMatchThreshold" : 0.12
+   }
   ],
   "paths": {
     "bitmaps_reference": "backstop_data/bitmaps_reference",
