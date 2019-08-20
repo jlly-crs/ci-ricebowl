@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://annualreport.crs.org/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": [".slideInRight",".atss-right"],
       "selectors": [
         "document"
       ],
@@ -23,7 +23,7 @@
       "label": "Financials",
       "url": "https://annualreport.crs.org/financials/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/financials",
-      "hideSelectors": [],
+      "hideSelectors": [".slideInRight",".atss-right"],
       "selectors": [
         "document"
       ],
@@ -35,7 +35,7 @@
       "label": "Our-work",
       "url": "https://annualreport.crs.org/our-work/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/our-work",
-      "hideSelectors": [],
+      "hideSelectors": [".slideInRight",".atss-right"],
       "selectors": [
         "document"
       ],
@@ -47,7 +47,7 @@
       "label": "At-a-glance",
       "url": "https://annualreport.crs.org/at-a-glance/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/at-a-glance/",
-      "hideSelectors": [],
+      "hideSelectors": [".slideInRight",".atss-right"],
       "selectors": [
         "document"
       ],
@@ -59,7 +59,7 @@
       "label": "Agency-leadership",
       "url": "https://annualreport.crs.org/agency-leadership/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/agency-leadership/",
-      "hideSelectors": [],
+      "hideSelectors": [".slideInRight",".atss-right"],
       "selectors": [
         "document"
       ],
