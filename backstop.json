@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://socy.crs.org/",
       "referenceUrl": "https://ci-update-crs-socy.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": ["tp-bgimg", "defaultimg"],
       "selectors": [
         "document"
       ],
