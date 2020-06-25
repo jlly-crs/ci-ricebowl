@@ -39,24 +39,24 @@ jobs:
 
 workflows:
   version: 2
-  nightly_updates:
-     triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - crsespanol
-     jobs:
-       - updates
+#   nightly_updates:
+#      triggers:
+#       - schedule:
+#           cron: "0 0 * * *"
+#           filters:
+#             branches:
+#               only:
+#                 - crsespanol
+#      jobs:
+#        - updates
 
-  run_updates:
-     jobs:
-       - updates:
-           filters:
-              branches:
-                 only:
-                   - crsespanol
+#   run_updates:
+#      jobs:
+#        - updates:
+#            filters:
+#               branches:
+#                  only:
+#                    - crsespanol
 # machine:
 #   timezone:
 #     America/Chicago
