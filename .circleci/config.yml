@@ -37,26 +37,26 @@ jobs:
                     - $HOME/.terminus
                     - $HOME/terminus
 
-workflows:
-  version: 2
-  nightly_updates:
-     triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - ICS
-     jobs:
-       - updates
+#workflows:
+#  version: 2
+#  nightly_updates:
+#     triggers:
+#      - schedule:
+#          cron: "0 0 * * *"
+#          filters:
+#            branches:
+#              only:
+#               - ICS
+#     jobs:
+#       - updates
 
-  run_updates:
-     jobs:
-       - updates:
-           filters:
-              branches:
-                 only:
-                   - ICS
+#  run_updates:
+#     jobs:
+#       - updates:
+#           filters:
+#              branches:
+#                 only:
+#                   - ICS
 
 # machine:
 #   timezone:
