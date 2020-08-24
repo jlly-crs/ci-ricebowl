@@ -17,7 +17,7 @@
       ],
       "readyEvent": null,
       "delay": 1000,
-      "misMatchThreshold" : 12
+      "misMatchThreshold" : 11
     },
  {
       "label": "Students",
@@ -29,7 +29,7 @@
       ],
       "readyEvent": null,
       "delay": 1000,
-      "misMatchThreshold" : 12
+      "misMatchThreshold" : 11
     },
  {
       "label": "Fair-trade-impact-coffee-case-study",
@@ -41,7 +41,7 @@
       ],
       "readyEvent": null,
       "delay": 800,
-      "misMatchThreshold" : 12
+      "misMatchThreshold" : 11
     },
  {
       "label": "Faculty",
@@ -53,7 +53,7 @@
       ],
       "readyEvent": null,
       "delay": 800,
-      "misMatchThreshold" : 12
+      "misMatchThreshold" : 11
     }
   ],
   "paths": {
