@@ -48,7 +48,7 @@
       "url": "https://annualreport.crs.org/at-a-glance/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/at-a-glance/",
       "hideSelectors": [".slideInRight",".atss-right"],
-      "removeSelectors": ["#map"],
+      "removeSelectors": ["#map-section"],
       "selectors": [
         "document"
       ],
