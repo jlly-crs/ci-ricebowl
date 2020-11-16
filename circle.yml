@@ -20,12 +20,12 @@ jobs:
             - run:
                 name: dependencies
                 command: ./bin/set-up-globals.sh
-                no_output_timeout: 30m
+                no_output_timeout: 60m
 
             - run:
                 name: run updates
                 command: ./bin/wp-auto-update.sh
-                no_output_timeout: 30m
+                no_output_timeout: 60m
 
             - save_cache:
                 key: composer-cache
