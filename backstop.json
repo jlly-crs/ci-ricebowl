@@ -11,7 +11,10 @@
       "label": "Homepage",
       "url": "https://www.crsricebowl.org/",
       "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": [
+        ".sgpb-popup-dialog-main-div-wrapper",
+	".sgpb-popup-overlay"
+      ],
       "selectors": [
         "document"
       ],
