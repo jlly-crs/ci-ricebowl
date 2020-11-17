@@ -32,18 +32,6 @@
       "misMatchThreshold" : 11
     },
  {
-      "label": "Fair-trade-impact-coffee-case-study",
-      "url": "https://university.crs.org/session/fair-trade-impact-coffee-case-study",
-      "referenceUrl": "https://ci-update-crs-university.pantheonsite.io/session/fair-trade-impact-coffee-case-study",
-      "hideSelectors": [],
-      "selectors": [
-        "document"
-      ],
-      "readyEvent": null,
-      "delay": 800,
-      "misMatchThreshold" : 11
-    },
- {
       "label": "Faculty",
       "url": "https://university.crs.org/faculty",
       "referenceUrl": "https://ci-update-crs-university.pantheonsite.io/faculty",
