@@ -20,27 +20,15 @@
       "misMatchThreshold" : 11
     },
  {
-      "label": "Students",
-      "url": "https://university.crs.org/students",
-      "referenceUrl": "https://ci-update-crs-university.pantheonsite.io/students",
+      "label": "Find or Start Chapter",
+      "url": "https://university.crs.org/find-or-start-a-chapter",
+      "referenceUrl": "https://ci-update-crs-university.pantheonsite.io/find-or-start-a-chapter",
       "hideSelectors": [],
       "selectors": [
         "document"
       ],
       "readyEvent": null,
       "delay": 1000,
-      "misMatchThreshold" : 11
-    },
- {
-      "label": "Faculty",
-      "url": "https://university.crs.org/faculty",
-      "referenceUrl": "https://ci-update-crs-university.pantheonsite.io/faculty",
-      "hideSelectors": [],
-      "selectors": [
-        "document"
-      ],
-      "readyEvent": null,
-      "delay": 800,
       "misMatchThreshold" : 11
     }
   ],
