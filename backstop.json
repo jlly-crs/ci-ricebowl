@@ -13,10 +13,10 @@
       "referenceUrl": "https://ci-update-crs-virtual-votive.pantheonsite.io/",
       "hideSelectors": [
         "#votive-wrapper", 
-	".title-subbrand",
-	".candleholder",
-	"#candle-wrapper",
-	"#votive"
+	".title-subbrand"
+      ],
+      "removeSelectors": [
+	".candleholder"      
       ],
       "selectors": [
         "document"
