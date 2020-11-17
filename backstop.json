@@ -12,6 +12,7 @@
       "url": "https://jwbg.crs.org",
       "referenceUrl": "https://ci-update-jwbg.pantheonsite.io/",
       "hideSelectors": [],
+      "removeSelectors": ["#footer"],
       "selectors": [
         "document"
       ],
