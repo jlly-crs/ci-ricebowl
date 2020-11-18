@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://www.changingthewaywecare.org/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/",
-      "hideSelectors": [],
+      "hideSelectors": ["#cookie-notice"],
       "selectors": [
         "document"
       ],
@@ -23,7 +23,7 @@
       "label": "Understand",
       "url": "https://www.changingthewaywecare.org/understand/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/understand/",
-      "hideSelectors": [],
+      "hideSelectors": ["#cookie-notice"],
       "selectors": [
         "document"
       ],
@@ -35,7 +35,7 @@
       "label": "Results-and-impact",
       "url": "https://www.changingthewaywecare.org/results-and-impact/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/results-and-impact/",
-      "hideSelectors": [],
+      "hideSelectors": ["#cookie-notice"],
       "selectors": [
         "document"
       ],
@@ -47,7 +47,7 @@
       "label": "Stories",
       "url": "https://www.changingthewaywecare.org/stories/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/stories/",
-      "hideSelectors": [".ctwwc-stories--wrap", ".ctwwc-stories--tile.tile--full", ".cn-top", ".ctwwc-stories--image"],
+      "hideSelectors": [".ctwwc-stories--wrap", ".ctwwc-stories--tile.tile--full", ".cn-top", ".ctwwc-stories--image", "#cookie-notice"],
       "selectors": [
         "document"
       ],
@@ -59,7 +59,7 @@
       "label": "Frequently-asked-questions",
       "url": "https://www.changingthewaywecare.org/frequently-asked-questions/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/frequently-asked-questions/",
-      "hideSelectors": [],
+      "hideSelectors": ["#cookie-notice"],
       "selectors": [
         "document"
       ],
