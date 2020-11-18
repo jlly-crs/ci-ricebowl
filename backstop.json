@@ -50,7 +50,7 @@
       "label": "Blog",
       "url": "https://coffeelands.crs.org/blog/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/blog/",
-      "hideSelectors": [],
+      "hideSelectors": [".carousel-inner .fill"],
       "selectors": [
         "document"
       ],
@@ -63,7 +63,7 @@
       "label": "Research",
       "url": "https://coffeelands.crs.org/research/",
       "referenceUrl": "https://ci-update-coffeelands.pantheonsite.io/research/",
-      "hideSelectors": [],
+      "hideSelectors": [".carousel-inner .fill"],
       "selectors": [
         "document"
       ],
