@@ -9,6 +9,7 @@
   "scenarios": [
     {
       "label": "Homepage",
+      "cookiePath": "backstop_data/casper_scripts/cookies.json",
       "url": "https://www.changingthewaywecare.org/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/",
       "hideSelectors": ["#cookie-notice"],
@@ -21,6 +22,7 @@
     },
  {
       "label": "Understand",
+      "cookiePath": "backstop_data/casper_scripts/cookies.json",
       "url": "https://www.changingthewaywecare.org/understand/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/understand/",
       "hideSelectors": ["#cookie-notice"],
@@ -33,6 +35,7 @@
     },
  {
       "label": "Results-and-impact",
+      "cookiePath": "backstop_data/casper_scripts/cookies.json",
       "url": "https://www.changingthewaywecare.org/results-and-impact/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/results-and-impact/",
       "hideSelectors": ["#cookie-notice"],
@@ -45,6 +48,7 @@
     },
  {
       "label": "Stories",
+      "cookiePath": "backstop_data/casper_scripts/cookies.json",
       "url": "https://www.changingthewaywecare.org/stories/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/stories/",
       "hideSelectors": [".ctwwc-stories--wrap", ".ctwwc-stories--tile.tile--full", ".cn-top", ".ctwwc-stories--image", "#cookie-notice"],
@@ -57,6 +61,7 @@
     },
  {
       "label": "Frequently-asked-questions",
+      "cookiePath": "backstop_data/casper_scripts/cookies.json",
       "url": "https://www.changingthewaywecare.org/frequently-asked-questions/",
       "referenceUrl": "https://ci-update-crs-100.pantheonsite.io/frequently-asked-questions/",
       "hideSelectors": ["#cookie-notice"],
