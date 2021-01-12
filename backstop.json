@@ -11,7 +11,7 @@
       "label": "Homepage",
       "url": "https://annualreport.crs.org/",
       "referenceUrl": "https://ci-update-annualreportcrs.pantheonsite.io/",
-      "hideSelectors": [".slideInRight",".atss-right"],
+      "hideSelectors": [".slideInRight",".atss-right",".partner"],
       "selectors": [
         "document"
       ],
