@@ -16,7 +16,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
+      "delay": 2000,
       "misMatchThreshold" : 0.08
     },
  {
@@ -28,7 +28,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
+      "delay": 2000,
       "misMatchThreshold" : 0.08
     },    
  {
@@ -40,7 +40,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
+      "delay": 2000,
       "misMatchThreshold" : 0.08
     },
  {
@@ -53,7 +53,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
+      "delay": 2000,
       "misMatchThreshold" : 0.08
     },
  {
@@ -65,7 +65,7 @@
         "document"
       ],
       "readyEvent": null,
-      "delay": 500,
+      "delay": 2000,
       "misMatchThreshold" : 0.08
     }
   ],
