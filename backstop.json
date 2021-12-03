@@ -28,7 +28,8 @@
       "referenceUrl": "https://ci-update-crsricebowl.pantheonsite.io/recipe",
       "hideSelectors": [
       	".sgpb-popup-dialog-main-div-wrapper",
-	".sgpb-popup-overlay"
+	".sgpb-popup-overlay",
+	".recipe-item"
       ],
       "selectors": [
         "document"
