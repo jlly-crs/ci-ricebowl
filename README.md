@@ -1,5 +1,9 @@
 # Pantheon Drupal Auto Update #
 
+## Notice
+
+On 3-11-22, this repo and CircleCI process was closed. All CI/VR is now done through Pantheon Autopilot.
+
 ## Description ##
 Automate Drupal core, plugin and theme updates on [Pantheon](https://pantheon.io) with Terminus, CircleCI, Drush, BackstopJS and Slack.
 
